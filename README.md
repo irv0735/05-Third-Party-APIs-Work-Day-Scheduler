@@ -17,5 +17,6 @@ Screenshot:
 ![Work-Day Scheduler](./assets/Work-Day-Scheduler-Example.png)
 
 Links: 
-* Repo - 
-* "Live" Site - 
+* Repo - https://github.com/irv0735/05-Third-Party-APIs-Work-Day-Scheduler
+* "Live" Site - https://irv0735.github.io/05-Third-Party-APIs-Work-Day-Scheduler/
+
