@@ -6,7 +6,7 @@ currentDay.text(moment().format("dddd, MMMM Do"));
 let currentHour = moment().format("H");
 
 /**
- * Renders the Schedule blocks, assiging appropriate class based on current time and pulling data from local storage
+ * Renders the Schedule blocks, assiging appropriate class based on current time. 
  * @author Nate Irvin <nathan.a.irvin@gmail.com>
  */
 function renderInitialSchedule() {
@@ -53,6 +53,7 @@ function renderInitialSchedule() {
     }
 }
 
+// Init function called when the page is loaded to get data from local storage and render the schedule
 function init() {
     textEntryArray = JSON.parse(localStorage.getItem("textEntries"));
     if (textEntryArray == null) {
@@ -64,6 +65,7 @@ function init() {
 
 init();
 
+// Event listener on the Save Button -> Triggers runction to save the text in the associated area to local Storage
 $(".save-line").on("click", "button", function(event) {
     let entryText = $(this).closest("tr").find(".select-text").val();
     let rowClicked = $(this).closest("tr").index();
